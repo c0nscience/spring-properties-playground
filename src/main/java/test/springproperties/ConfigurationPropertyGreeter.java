@@ -7,11 +7,11 @@ import lombok.extern.slf4j.Slf4j;
 
 @Component
 @Slf4j
-public class Greeting implements CommandLineRunner {
+public class ConfigurationPropertyGreeter implements CommandLineRunner {
 
     private GreetingProperties greetingProperties;
 
-    public Greeting(GreetingProperties greetingProperties) {
+    public ConfigurationPropertyGreeter(GreetingProperties greetingProperties) {
         this.greetingProperties = greetingProperties;
     }
 

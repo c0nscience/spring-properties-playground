@@ -6,19 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-/**
- * author: ber.bherzig@gmail.com
- * date: 07.08.17 - 23:19
- */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class GreetingTest {
+public class ConfigurationPropertyGreeterTest {
 
     @Autowired
-    private Greeting greeting;
+    private ConfigurationPropertyGreeter greeter;
 
     @Test
     public void shouldGreet() throws Exception {
-        greeting.run();
+        greeter.run();
     }
 }
